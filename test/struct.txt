@@ -1,0 +1,22 @@
+k8s-observability-pipeline/
+├── README.md
+├── src/
+│   └── order-service/
+│       ├── main.go
+│       ├── go.mod
+│       ├── go.sum
+│       └── Dockerfile
+├── k8s/
+│   ├── namespaces.yaml
+│   ├── apps/
+│   │   └── order-service.yaml
+│   └── observability/
+│       ├── fluent-bit-agent.yaml
+│       ├── fluent-bit-processor.yaml
+│       └── grafana-values.yaml
+├── scripts/
+│   ├── spin-up.sh
+│   └── tear-down.sh
+└── docs/
+    ├── architecture-diagram.png
+    └── grafana-dashboard.png
